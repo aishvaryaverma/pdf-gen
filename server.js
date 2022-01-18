@@ -11,14 +11,14 @@ app.disable('x-powered-by');
 
 // static folder
 app.use(express.static(__dirname + '/public'));
-console.log(process.env);
+
 // routes
 app.get('/', home);
 app.get('/pdf', pdf);
 
 // start app
 const host = process.env.HOST || 'localhost';
-const port = process.env.PORT || '4900';
+const port = process.env.PORT || '5000';
 app.listen(port, host, () => {
     console.log(`App started at http://${host}:${port}`);
 });
