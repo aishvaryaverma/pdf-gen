@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>SabkaWifi HS Login | Login</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" />
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row p-t-80">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-12 logo">
+						<img src="img/logo.png">
+					</div>
+				</div>
+				<div class="row d-none d-sm-block">
+					<div class="col-md-12 lap">
+						<img src="img/lap.png">
+					</div>
+				</div>
+				<div class="row mt-m-10">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-4 dn"></div>
+							<div class="col-md-4 yellow"><span>PM-WANI</span></div>
+							<div class="col-md-2 blue"><span class="">WIFI</span></div>
+							<div class="col-md-2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-4 ">
+				<div class="white-border">
+					<div class="log">
+						<div class="row">
+							<div class="col-md-12 logo">
+								<h5>Generate Certificate</h5>
+							</div>
+						</div>
+						<form id="loginForm" class="form-horizontal" role="form" action="/pdf" method="get">
+							<div class="row">
+								<div class="col-md-12">
+									<i class="material-icons icon-adjust">person</i><span class="dash">|</span>
+									<input class="t-box" type="text" id="name" name="name" placeholder="Enter Name" required>
+									<select name="title" class="select-adjust">
+										<option value="Mr" selected>Mr</option>
+										<option value="Ms">Ms</option>
+										<option value="Mrs">Mrs</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<i class="material-icons icon-adjust">location_on</i><span class="dash">|</span>
+									<input class="t-box" type="text" id="place" name="place" placeholder="Enter Address" required>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<i class="material-icons icon-adjust">fingerprint</i><span class="dash">|</span>
+									<input class="t-box" type="text" id="pdoId" name="pdoId" placeholder="Enter PDO Id" required>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<i class="material-icons icon-adjust">event</i><span class="dash">|</span>
+									<input class="t-box" type="date" id="wef" name="wef" placeholder="Enter w.e.f" required>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<img src="img/pass.png" class="pass" />
+									<span class="dash">|</span>
+									<input id="mobile-login-pass" class="t-box" type="password" id="password" name="password" placeholder="Password" required />
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<button class="t-btn" type="submit">Generate</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+	</div>
+</body>
+</html>

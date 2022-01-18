@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>{{user.name}} Certificate</title>
+
+	<style>
+		.box {
+			position: relative;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 27px;
+			font-weight: bold;
+			text-align: center;
+			color: #444;
+		}
+		.name {
+			position: absolute;
+			top: 365px;
+			right: 150px;
+			z-index: 1;
+			width: 400px;
+		}
+		.place {
+			position: absolute;
+			top: 420px;
+			left: 215px;
+			z-index: 1;
+			width: 695px;
+		}
+		.pdoId {
+			position: absolute;
+			z-index: 1;
+			top: 477px;
+			right: 135px;
+			width: 300px;
+		}
+		.wef {
+			position: absolute;
+			z-index: 1;
+			top: 530px;
+			left: 240px;
+			width: 500px;
+		}
+		.date_created {
+			position: absolute;
+			z-index: 1;
+			left: 100px;
+			bottom: 100px;
+			width: 200px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<img width="100%" src="data:image/png;base64,{{logo}}" alt="Logo" style="display: block;" />
+		<div class="name">{{user.name}}</div>
+		<div class="place">{{user.place}}</div>
+		<div class="pdoId">{{user.pdoId}}</div>
+		<div class="wef">{{user.wef}}</div>
+		<div class="date_created">{{date_created}}</div>
+	</div>
+</body>
+</html>
