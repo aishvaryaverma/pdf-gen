@@ -8,6 +8,7 @@ module.exports = async (req, res) => {
 	const { query } = req;
 	if (query.password !== process.env.PASSWORD) {
 		res.redirect('/');
+		return;
 	}
 	try {
 		// read image
