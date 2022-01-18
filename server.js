@@ -17,8 +17,7 @@ app.get('/', home);
 app.get('/pdf', pdf);
 
 // start app
-const host = process.env.HOST || 'localhost';
-const port = process.env.PORT || '5000';
-app.listen(port, host, () => {
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
     console.log(`App started at http://${host}:${port}`);
 });
