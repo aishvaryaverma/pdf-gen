@@ -12,13 +12,14 @@ module.exports = async (req, res) => {
 	}
 	try {
 		// read image
-		const bitmap = fs.readFileSync(path.resolve('./public/bg.jpg'));
+		const bitmap = fs.readFileSync(path.resolve('./public/bg.png'));
 		const logo = bitmap.toString('base64');
 		// file
 		const html = fs.readFileSync(path.resolve('./templates/pdf.html'), "utf-8");
 
 		const today = new Date();
-		const formatDate = (date = today) => moment(date).format('D MMM, YYYY');
+		const formatDate = (date = today) => moment(date).format('DD MMM, YYYY');
+
 		const doc = await pdf.create({
 			path: `certificates/${query.name}.pdf`,
 			type: '',
@@ -34,7 +35,7 @@ module.exports = async (req, res) => {
 			},
 		}, {
 			width: '1280px',
-			height: '920px',
+			height: '930px',
 			border: "20px",
 			// format: "A4",
 			// orientation: 'portrait',
