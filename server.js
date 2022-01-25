@@ -14,7 +14,7 @@ app.use(express.static(__dirname + '/public'));
 
 // routes
 app.get('/', home);
-app.get('/pdf', pdf);
+// app.get('/pdf', pdf);
 
 // start app
 const PORT = process.env.PORT || 5000;
